@@ -40,8 +40,17 @@ const App = () => {
             <Route path="/admin-login" element={<AdminLogin/>} />  
         </Routes>
       </Router>
-    </div>
-  )
-}
 
-export default App
+      <Toaster 
+      toastOptions={{
+        className: "",
+        style: {
+          fontSize: "13px",
+        },
+      }}
+      />
+    </div>
+  );
+};
+
+export default App;
